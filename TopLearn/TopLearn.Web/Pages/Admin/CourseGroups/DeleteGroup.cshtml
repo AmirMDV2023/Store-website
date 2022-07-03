@@ -1,0 +1,19 @@
+﻿@page "{id}"
+@using TopLearn.DataLayer.Entities.Course
+@model TopLearn.Web.Pages.Admin.Roles.DeleteGroupModel
+@{
+    ViewData["Title"] = "حذف گروه";
+}
+<div class="container alert alert-danger">
+    <form method="post">
+        <input type="hidden" asp-for="CourseGroup.GroupId" />
+        <input type="hidden" asp-for="CourseGroup.ParentId" />
+        <input type="hidden" asp-for="CourseGroup.GroupTitle" />
+
+        <h2>آیا از حذف گروه "@Model.CourseGroup.GroupTitle" مطمئن هستید؟</h2>
+        <p>
+            <input type="submit" value="حذف کن" class="btn btn-outline btn-danger" />
+            <a asp-page="Index" class="btn btn-outline btn-info">انصراف</a>
+        </p>
+    </form>
+</div>

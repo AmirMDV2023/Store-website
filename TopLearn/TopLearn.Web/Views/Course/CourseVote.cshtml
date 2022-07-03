@@ -1,0 +1,19 @@
+﻿@model Tuple<int,int>
+@if (User.Identity.IsAuthenticated && ViewBag.NotAccess==true)
+{
+    
+    <div class="row">
+        <img src="https://toplearn.com/img/votew.jpg"/>
+        <p></p>
+        <p>
+            <a class="btn btn-success" onclick="vote(true)">
+                <img class="btnLike" src="https://toplearn.com/img/like.png" />
+                می پسندم(@Model.Item1)
+            </a>
+            <a class="btn btn-danger" onclick="vote(false)">
+                <img class="btnLike" src="https://toplearn.com/img/dislike.png"/>
+                نمی پسندم(@Model.Item2)
+            </a>
+        </p>
+    </div>
+}

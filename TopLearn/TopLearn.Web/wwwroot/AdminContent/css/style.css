@@ -1,0 +1,21 @@
+﻿@font-face {
+    font-family: 'BYekan';
+    src: url('../../css/fonts/BYekan-webfont.eot') format('eot'),
+         url('../../css/fonts/BYekan-webfont.woff') format('woff'),
+         url('../../css/fonts/BYekan-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BYekan';
+    font-size: 14px;
+    word-spacing: -1px;
+    background-color: #f2f2f2
+}
+.col-lg-12>h1 {
+    font-family: BYekan;
+    color: teal;
+}
